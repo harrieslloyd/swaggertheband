@@ -1,3 +1,7 @@
+body{
+    width: 100vw;
+    height: 100vh
+}
 div.topnav {
     color: black;
     background-color: cornflowerblue;
@@ -18,3 +22,22 @@ html {
     color: darkgreen;
     font-weight: bold;
 }
+
+footer{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.spotifyFooter{
+    text-align: right;
+}
+
+.verticalCenter {
+    margin: 0;
+    position: static;
+    top: 50%;
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
