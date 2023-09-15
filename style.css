@@ -120,3 +120,7 @@ header table tr th a:hover:after {
     opacity:1;
     width: 200px;
 }
+
+.last {
+    border-bottom: none;
+}
