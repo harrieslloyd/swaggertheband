@@ -75,10 +75,6 @@ header table tr th a:hover:after {
     opacity:1;
     width: 200px;
 }
-
-.last {
-    border-bottom: none;
-}
     
 /* Title Section */
     
@@ -121,4 +117,6 @@ header table tr th a:hover:after {
     font-size: 30px;
 }
 
-
+.last {
+    border-bottom: none;
+}
