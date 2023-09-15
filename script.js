@@ -22,7 +22,7 @@ getData("https://docs.google.com/spreadsheets/d/e/2PACX-1vR0RmKzzPAtkwTDAXfQDnha
 hiddenlogo = document.getElementById("hiddenlogo")
 var myScrollFunc = function() {
     var y = window.scrollY;
-    if (y >= 250) {
+    if (y >= 300) {
         hiddenlogo.classList.add("shown")
     } else {
         hiddenlogo.classList.remove("shown")
