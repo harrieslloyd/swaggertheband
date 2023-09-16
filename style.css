@@ -120,3 +120,22 @@ header table tr th a:hover:after {
 .last {
     border-bottom: none;
 }
+
+
+/* Events */
+
+#eventtable tr td {
+    padding:10px;
+}
+
+.event {
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    border: 3px dashed rgba(29, 31, 29, 0.7);
+    padding: 20px;
+}
+
+.event table tr td {
+    font-size: 20px;
+    width: 25vw;
+}
