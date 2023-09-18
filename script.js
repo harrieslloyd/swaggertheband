@@ -30,6 +30,23 @@ function addRow(tableID) {
     cell3.appendChild(element3);  
 }  
 
+function removeRow(btnName) {  
+    try {  
+        var table = document.getElementById('dataTable');  
+        var rowCount = table.rows.length;  
+        for (var i = 0; i < rowCount; i++) {  
+            var row = table.rows[i];  
+            var rowObj = row.cells[0].childNodes[0];  
+            if (rowObj.name == btnName) {  
+                table.deleteRow(i);  
+                rowCount--;  
+            }  
+        }  
+    } catch (e) {  
+        alert(e);  
+    }  
+} 
+
 async function getData(url) {
     const response = await fetch(url)
     return response.text
