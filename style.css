@@ -86,7 +86,7 @@ header table tr th a:hover:after {
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: rgb(67, 168, 84);
     font-size: 50px;
 }
 
@@ -103,7 +103,7 @@ header table tr th a:hover:after {
     font-family: 'Poppins', sans-serif;
     color: black;
     text-align: center;
-    border-bottom: 5px dashed rgba(29, 31, 29, 0.7);
+    border-bottom: 5px dashed rgb(2, 77, 14);
 }
     
 .textwrap {
