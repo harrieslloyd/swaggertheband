@@ -12,9 +12,10 @@ function addRow(tableID) {
     const clone = elem.cloneNode(true);
 
     console.log(elem);
+    console.log();
     console.log(table);
 
-    const newRow = table.appendChild(clone);
+    const newRow = elem.after(clone);
 } 
 
 async function getData(url) {
