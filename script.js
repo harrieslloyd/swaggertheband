@@ -6,10 +6,15 @@ function screenHeight(){
 }
 
 function addRow(tableID) {  
-    var table = upcomingEvents.getElementById(tableID);
-    var elem = upcomingEvents.querySelector('#template');
-    var clone = elem.cloneNode(true);
-    var newRow = table.appendChild(clone);
+    console.log("running addRow");
+    const table = upcomingEvents.getElementById(tableID);
+    const elem = upcomingEvents.querySelector('#template');
+    const clone = elem.cloneNode(true);
+
+    console.log(elem);
+    console.log(table);
+
+    const newRow = table.appendChild(clone);
 } 
 
 async function getData(url) {
