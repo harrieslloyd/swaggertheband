@@ -7,8 +7,8 @@ function screenHeight(){
 
 function addRow(tableID) {  
     console.log("running addRow");
-    const table = upcomingEvents.getElementById(tableID);
-    const elem = upcomingEvents.querySelector('#template');
+    const table = document.getElementById(tableID);
+    const elem = document.querySelector('#template');
     const clone = elem.cloneNode(true);
 
     console.log(elem);
