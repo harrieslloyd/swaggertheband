@@ -81,13 +81,16 @@ header table tr th a:hover:after {
  .titlesection {
     height: 75vh;
     width: 100vw;
-    background-color: #1d1f1d;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     color: rgb(67, 168, 84);
     font-size: 50px;
+    background: linear-gradient( rgba(29, 31, 29, 0.75), rgba(29, 31, 29, 0.75) ), url(images/titleimage2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Main Section */
