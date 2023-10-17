@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Upcoming Events</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        
+        <header>
+            <table>
+                <tr>
+                    <th class="navcol"><a href="/index.html">Home</a></th>
+                    <th class="navcol"><a href="/biography.html">Biography</a></th>
+                    <th><div id="hiddenlogo" class="hl hidden"></div></th>
+                    <th class="navcol"><a class="active" href="/upcomingEvents.html">Upcoming Events</a></th>
+                    <th class="navcol"><a href="/media.html">Media</a></th>
+                </tr>
+            </table>
+        </header>
+
+        <section class="titlesection">
+            <h1>Upcoming Events</h1>
+        </section>
+
+        <section class="mainsection last">
+            <table id="eventtable">
+                <tr id="template"><td><div class="event" id="event0">
+                    <table><tr>
+                        <td>09/21 7:00 PM</td>
+                        <td>isudhgbfjjs</td>
+                    </tr></table>
+                </div></td></tr>
+                <tr><td><div class="event" id="event1">
+                    <table><tr>
+                        <td>09/21 7:00 PM</td>
+                        <td>Earth, Wind, and Fire Plaza</td>
+                    </tr></table>
+                </div></td></tr>
+                <tr><td><div class="event" id="event2">
+                    <table><tr>
+                        <td>December, 1963 7:00 PM</td>
+                        <td>Four Seasons Lodge</td>
+                    </tr></table>
+                </div></td></tr>
+                <tr><td><div class="event" id="event3">
+                    <table><tr>
+                        <td>01/01/1921 12:01 AM</td>
+                        <td>Pinball Alley</td>
+                    </tr></table>
+                </div></td></tr>
+                <tr><td><div class="event" id="event3">
+                    <table><tr>
+                        <td>1979</td>
+                        <td>The Pumpkin Patch</td>
+                    </tr></table>
+                </div></td></tr>
+                <tr><td><div class="event" id="event3">
+                    <table><tr>
+                        <td>The first rainy day of November</td>
+                        <td>The Gun Rose Garden</td>
+                    </tr></table>
+                </div></td></tr>
+            </table>
+        </section>
+
+        <input type="button" value="Add Row" onclick="addRow('eventtable')" />  
+
+        <script src="/script.js" async defer></script>
+    </body>
+</html>
