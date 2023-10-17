@@ -1,6 +1,9 @@
 const clientId = "2f380f8fc28b4ab68298d967fe13805d";
+const clientSecret = "03bb954af29e4752beb6ea0cc98df454";
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
+
+console.log(getAccessToken(clientId, code));
 
 if (!code) {
     redirectToAuthCodeFlow(clientId);
@@ -70,8 +73,6 @@ async function fetchTopTracks(token) {
     const result = await fetch("https://api.spotify.com/v1/artists/7tPoZvl7OYT2rQDdzCQpfR/top-tracks?market='ES'", {
         method: "GET", headers: { Authorization: `Bearer ${token}` }
     });
-
-    console.log(result)
 
     return await result.json();
 }
