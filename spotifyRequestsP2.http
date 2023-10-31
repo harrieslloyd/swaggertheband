@@ -1,3 +1,3 @@
 curl --request GET \
-     --url https://api.spotify.com/v1/artists/7tPoZvl7OYT2rQDdzCQpfR/top-tracks?market="ES" \
-     -H "Authorization: Bearer  BQD9QEUiycGXGcPTIJfljQScOCVWP16LlPgQd1g88xkjk3ZKIi-JyROTJxZEJhqoK6o3BYulkXpyI6thJOBbIRHx7GUkwOAEoOCoJiff0JgEXUQHMrg"
+     --url https://api.spotify.com/v1/artists/7tPoZvl7OYT2rQDdzCQpfR/top-tracks?market="US" \
+     -H "Authorization: Bearer  BQCEkNNcwueQ9LscoeCMNrlixO6KHId_QyGIwBfmbNL5HzkdvtPsmoRLcbufSdT3FcoI9N2j0CmqmKcHVafi-AqvDYw5UTnNkRckLRyADb8TFiBI5HE"
