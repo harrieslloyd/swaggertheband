@@ -1,3 +1,0 @@
-curl --request GET \
-     --url https://api.spotify.com/v1/artists/7tPoZvl7OYT2rQDdzCQpfR/top-tracks?market="US" \
-     -H "Authorization: Bearer  BQCEkNNcwueQ9LscoeCMNrlixO6KHId_QyGIwBfmbNL5HzkdvtPsmoRLcbufSdT3FcoI9N2j0CmqmKcHVafi-AqvDYw5UTnNkRckLRyADb8TFiBI5HE"

@@ -2,7 +2,10 @@ const client_id = "2f380f8fc28b4ab68298d967fe13805d";
 const client_secret = "03bb954af29e4752beb6ea0cc98df454";
 const access_token = await getAccessToken(client_id, client_secret);
 const topTracks = await fetchTopTracks(access_token);
+let eventData = (await downloadCSV()).split(",")
 
+console.log(document.title)
+console.log(eventData[3])
 populateUI(topTracks)
 
 export async function getAccessToken(clientId, clientSecret) {
@@ -31,7 +34,16 @@ async function fetchTopTracks(token) {
 }
 
 function populateUI(topTracks) {
-    document.getElementById("topSong").innerText = topTracks.tracks[0].name;
+    if (document.title == "Home") {
+        document.getElementById("topSong").innerText = topTracks.tracks[0].name;
+    } else if (document.title == "Upcoming Events"){
+        document.getElementById("upcomingEvent").innerText = eventData[3];
+    }
+}
+
+function cloneRow(tableID){
+    const row = document.getElementById("template");
+    const table = document.getElementByID(tableID);
 }
 
 function screenWidth(){
@@ -70,7 +82,8 @@ async function downloadCSV(){
         if (res.status === 200) {
 
             const data = await res.text();
-            console.log(data);
+            //console.log(data);
+            return data
 
         } else {
             console.log(`Error code ${res.status}`);
